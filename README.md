@@ -39,6 +39,19 @@ Dans le dossier `data/`, vous trouverez les ensembles des jeux de données suiva
 
 Le fichier `data/data_dictionary.csv` détaille les caractéristiques des variables présentes dans chaque jeu de données.
 
+## Analyses Health du groupe
+
+[health.ipynb](health.ipynb) réunit les contributions de Leticia et Flavien dans
+une seule analyse : préparation des sept tables, profils administratifs et
+cliniques, comparaisons par consultation et par acte, motifs et anomalies,
+graphes et parcours, calendriers, signaux cardiaques et notes cliniques.
+
+Les nettoyages communs ne sont pas exécutés deux fois. Les analyses à des
+échelles différentes sont distinguées et leurs limites discutées ; elles ne
+constituent pas des validations indépendantes. Le notebook s'exécute depuis
+la racine du dépôt, sans commande Git ni écriture dans les CSV sources.
+Les contributions antérieures restent accessibles dans l'historique Git.
+
 /!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
 Ils ne représentent pas des informations factuelles à propos de personnes réelles,
 d’organisations réelles, de gouvernnements réels ou localisations réelles.
