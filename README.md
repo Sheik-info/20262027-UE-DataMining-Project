@@ -52,6 +52,24 @@ constituent pas des validations indépendantes. Le notebook s'exécute depuis
 la racine du dépôt, sans commande Git ni écriture dans les CSV sources.
 Les contributions antérieures restent accessibles dans l'historique Git.
 
+## Ecology et synthèse transversale
+
+- [ecology.ipynb](ecology.ipynb) : analyse des six fichiers Ecology, de la qualité
+  des données aux profils de sites, séries mensuelles et rapports de terrain.
+- [synthese_transversale.ipynb](synthese_transversale.ipynb) : recoupements
+  reproductibles entre les quatre domaines, avec références et contre-exemples.
+- [Synthese_croisee_narratif.md](Synthese_croisee_narratif.md) : lecture rédigée
+  des résultats croisés et des hypothèses du narratif fictif.
+
+La synthèse transversale est une proposition à discuter collectivement : elle
+ne remplace pas la validation des analyses de chaque domaine et distingue les
+jointures calculées, les affirmations documentaires et les hypothèses.
+
+Les [messages Health](coordination/message_health.md) et
+[Ecology](coordination/message_ecology.md) sont des documents de coordination,
+séparés des notebooks de rendu. Les sauvegardes, fichiers temporaires, supports
+de cours et fiches personnelles de révision ne font pas partie de cette publication.
+
 /!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
 Ils ne représentent pas des informations factuelles à propos de personnes réelles,
 d’organisations réelles, de gouvernnements réels ou localisations réelles.
