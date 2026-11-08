@@ -41,16 +41,16 @@ Le fichier `data/data_dictionary.csv` détaille les caractéristiques des variab
 
 ## Analyses Health du groupe
 
-Deux contributions sont conservées séparément pour ne pas écraser les analyses
-existantes lors de leur intégration :
+[health.ipynb](health.ipynb) réunit les contributions de Leticia et Flavien dans
+une seule analyse : préparation des sept tables, profils administratifs et
+cliniques, comparaisons par consultation et par acte, motifs et anomalies,
+graphes et parcours, calendriers, signaux cardiaques et notes cliniques.
 
-- [health.ipynb](health.ipynb) : analyses de Leticia, conservées à l'identique.
-- [health_flavien.ipynb](health_flavien.ipynb) : contribution complémentaire de
-  Flavien, notamment sur les signaux cardiaques, les notes cliniques et les
-  rapprochements entre fichiers Health.
-
-Ces notebooks comportent aussi des sujets communs : ils sont à confronter pour
-la synthèse collective et ne constituent pas deux validations indépendantes.
+Les nettoyages communs ne sont pas exécutés deux fois. Les analyses à des
+échelles différentes sont distinguées et leurs limites discutées ; elles ne
+constituent pas des validations indépendantes. Le notebook s'exécute depuis
+la racine du dépôt, sans commande Git ni écriture dans les CSV sources.
+Les contributions antérieures restent accessibles dans l'historique Git.
 
 /!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
 Ils ne représentent pas des informations factuelles à propos de personnes réelles,
