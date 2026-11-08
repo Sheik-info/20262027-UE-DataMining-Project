@@ -39,6 +39,19 @@ Dans le dossier `data/`, vous trouverez les ensembles des jeux de données suiva
 
 Le fichier `data/data_dictionary.csv` détaille les caractéristiques des variables présentes dans chaque jeu de données.
 
+## Analyses Health du groupe
+
+Deux contributions sont conservées séparément pour ne pas écraser les analyses
+existantes lors de leur intégration :
+
+- [health.ipynb](health.ipynb) : analyses de Leticia, conservées à l'identique.
+- [health_flavien.ipynb](health_flavien.ipynb) : contribution complémentaire de
+  Flavien, notamment sur les signaux cardiaques, les notes cliniques et les
+  rapprochements entre fichiers Health.
+
+Ces notebooks comportent aussi des sujets communs : ils sont à confronter pour
+la synthèse collective et ne constituent pas deux validations indépendantes.
+
 /!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
 Ils ne représentent pas des informations factuelles à propos de personnes réelles,
 d’organisations réelles, de gouvernnements réels ou localisations réelles.
