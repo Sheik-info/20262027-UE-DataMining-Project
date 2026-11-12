@@ -24,6 +24,8 @@ Les 64 sites sont suivis mensuellement pendant 78 mois, de janvier 2019 à juin 
 
 À KNT-KES, l'indice observé vaut **45,9 % de sa référence calendaire en avril 2024** et **15,4 % en mai**, la référence étant la médiane du même mois en 2019–2023. Mai reste signalé lorsque l'on exige une disponibilité d'appareil d'au moins 90 %. Les mois analogues sélectionnés sur cinq conditions environnementales et de collecte ont des ratios plus élevés, mais ne constituent pas des témoins expérimentaux.
 
+La sensibilité conserve les baisses d'avril et mai avec les références 2019–2021 et 2021–2023 ; le nombre total de mois signalés varie toutefois de quatre à six. Les comparaisons à trois, cinq et dix voisins conservent le contraste de mai. En avril, l'un des dix analogues est plus bas que la cible : celle-ci n'est donc pas isolée par tous les contrôles.
+
 Cette baisse n'est pas unique : sur janvier 2024–juin 2025, TMB-PEL compte sept mois sous la moitié de sa référence, contre cinq pour KNT-KES. Les méthodes globales d'anomalies désignent surtout TMB-BRC, dont l'activité est élevée. La priorité donnée à KNT-KES vient donc de ses documents et de ses liens datés, pas d'un classement statistique qui l'isolerait sans ambiguïté.
 
 Le dossier **ACC-2024-0014** enregistre un accès Horizon à KNT-KES du **21 mars 2024 à 18 h au 22 mars à 03 h**. L'expédition **SHP-2024-00007** part le **22 mars à 09 h**, soit six heures plus tard, de **FCL-1030** vers **FCL-1024**, l'installation d'agrégation biologique de Meridian. La déclaration porte sur **six lots scellés**, pas sur six animaux.
@@ -50,6 +52,8 @@ MRP-42 représente **50 actes chez 28 patients**. Huit patients reçoivent **30 
 
 Le rapprochement des calendriers associe chacune des **26 livraisons cliniques** au premier acte MRP-42 ultérieur dans le même établissement, parmi les 30 actes répétés. Il retrouve **26 actes distincts chez les huit patients**, avec une arrivée **4,2 à 7,8 jours avant l'acte**. Quatre actes ne sont pas retenus par cette règle. Le calcul, détaillé dans la synthèse transversale, ne fixe pas de délai maximal et conserve les dates originales après conversion explicite. Cette proximité n'est pas un test de coïncidence ni une preuve d'administration : elle ne fournit aucune correspondance entre lot expédié et matériel utilisé.
 
+Le calendrier de comparaison retrouve un acte sous quatorze jours pour les 26 livraisons cliniques, contre cinq sur 74 autres livraisons dans les mêmes établissements et années. Des décalages de ±14 ou ±28 jours en retrouvent une à trois sur 26. Ces comparaisons descriptives ne sont pas des témoins indépendants et ne suivent pas un lot jusqu'à un patient.
+
 Les patients répétés sont plus âgés : 71,3 ans en moyenne, contre environ 50 dans les autres groupes. L'écart moyen entre âge chronologique et BIOAGE estimé est de **11,32 ans**, contre **1,10 an** pour les vingt bénéficiaires d'un acte unique et **1,01 an** pour les 212 autres patients. Le calcul donne une valeur moyenne par patient, pour ne pas surpondérer ceux ayant plus de mesures.
 
 Ce contraste soutient une piste de programme particulier dans le récit, **pas une efficacité thérapeutique démontrée**. Les groupes ne sont pas comparables expérimentalement et trois bénéficiaires répétés n'ont aucune mesure BIOAGE antérieure au premier acte. Aucun identifiant de matériel MRP-42 ne correspond directement à un identifiant de lot réceptionné dans le champ comparé. Les trois actes d'Elira Vaun précèdent le décès public de 2021 : ils n'étayent pas une intervention post mortem.
@@ -61,6 +65,8 @@ Sources : `clinical_procedures.csv`, `clinical_observations.csv`, `patient_admin
 Les notes **CLN-510027**, **CLN-510055** et **CLN-510064** décrivent des particularités physiologiques ou de capture. Elles ne définissent pas à elles seules une espèce. **CLN-510025** affirme un lien entre PAT-31065 et **Elias Voss**. Le registre confirme qu'Elias Voss préside Meridian, mais la fiche Health affiche **Corin Hallen, né en 1975**, tandis que le dirigeant est enregistré avec une naissance en **1961** et une autre fonction. L'identité documentaire n'est donc pas reproduite par une égalité des attributs structurés.
 
 Les sources **PUB-510043**, **PUB-510076** et **PUB-510044** suggèrent des continuités d'alias et d'associations historiques, notamment autour d'Adrian Vosmere, d'Elias Voss et de Jacob Vale. Cela reste une piste : noms, adresses de correspondance et formulations récurrentes ne prouvent pas une longévité exceptionnelle. **CLN-510126** fournit aussi un contre-exemple clinique où une hypothèse de double structure est rejetée après repositionnement.
+
+Le contrôle par identifiant exact retrouve LIC-VLN-MED-1001, attribuée à Emil Warden en 1895, dans 35 actes Health de 2015 à 2024. Mais LIC-VLN-MED-1006 est délivrée en 2026 alors que 33 actes sont datés de 2017 à 2025. Ces deux constats imposent d'examiner la qualité et l'histoire des identifiants, sans transformer une licence ancienne en preuve de longévité.
 
 Les minutes de 1962 (**PUB-510033**) et **PUB-510094** décrivent des stratégies opposées : aménagement de corridors et contrôle de programmes à long terme d'un côté ; opposition à l'extraction, au réchauffement et à la dissimulation de l'autre. Jacob Vale est associé à cette opposition, sans que son identité biologique soit déduite de ses positions.
 
