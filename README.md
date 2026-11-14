@@ -43,12 +43,21 @@ Le fichier `data/data_dictionary.csv` détaille les caractéristiques des variab
 
 Groupe 8 : Flavien, Leticia, Sarah, Marie, Arthur et Cheikh.
 
-Ordre de lecture : [Health](health.ipynb), [Ecology](ecology.ipynb),
-[Logistics](logistics.ipynb), [Public Records](public_records.ipynb), puis
-[synthèse transversale](synthese_transversale.ipynb). Chaque domaine possède
-ses propres préparations ; les rapprochements inter-domaines sont recalculés
-depuis les CSV sources dans la synthèse. Le fichier Base reste un document
-de travail et ne remplace pas les notebooks de domaine.
+Les cinq notebooks constituent le rapport. Ordre de lecture :
+
+| Notebook | Contenu |
+| --- | --- |
+| [Health](health.ipynb) | Sept tables, profils cliniques, signaux, notes et interventions répétées ; contributions de Leticia et Flavien réunies. |
+| [Ecology](ecology.ipynb) | Six fichiers, conditions de collecte, profils de sites, variations mensuelles et rapports de terrain. |
+| [Logistics](logistics.ipynb) | Sept fichiers, stocks, commandes, réceptions et circuits de transport. |
+| [Public Records](public_records.ipynb) | Neuf fichiers, registres, documents, références et parcours administratifs. |
+| [Synthèse transversale](synthese_transversale.ipynb) | Recoupements recalculés entre les quatre domaines, textes sources, contradictions et conclusion. |
+
+Chaque domaine prépare ses tables ; la synthèse recalcule les rapprochements
+depuis les CSV sources. Le README présente le récit et renvoie aux analyses
+qui l'étayent. `Base_notebook_to_complete.ipynb` reste le modèle initial et
+ne constitue pas le rapport final. Les contributions antérieures restent
+accessibles dans l'historique Git.
 
 ## Récit caché reconstitué
 
@@ -278,39 +287,12 @@ précis que les sources disponibles.
 
 Le détail des préparations, contrôles et résultats négatifs reste dans les
 notebooks de domaine. La [synthèse transversale](synthese_transversale.ipynb)
-présente les rapprochements recalculés ; la
-[synthèse rédigée](Synthese_croisee_narratif.md) en propose une autre lecture.
+présente les rapprochements recalculés et les textes sources.
 
 **Assistance IA.** Une assistance a été utilisée pour le recoupement des
 données, la vérification du code et l'aide à la rédaction. Les sources,
 calculs, contradictions et limites sont exposés pour permettre la discussion
 et la vérification par le groupe.
-
-## Analyses Health du groupe
-
-[health.ipynb](health.ipynb) réunit les contributions de Leticia et Flavien dans
-une seule analyse : préparation des sept tables, profils administratifs et
-cliniques, comparaisons par consultation et par acte, motifs et anomalies,
-graphes et parcours, calendriers, signaux cardiaques et notes cliniques.
-
-Les nettoyages communs ne sont pas exécutés deux fois. Les analyses à des
-échelles différentes sont distinguées et leurs limites discutées ; elles ne
-constituent pas des validations indépendantes. Le notebook s'exécute depuis
-la racine du dépôt, sans commande Git ni écriture dans les CSV sources.
-Les contributions antérieures restent accessibles dans l'historique Git.
-
-## Ecology et synthèse transversale
-
-- [ecology.ipynb](ecology.ipynb) : analyse des six fichiers Ecology, de la qualité
-  des données aux profils de sites, séries mensuelles et rapports de terrain.
-- [synthese_transversale.ipynb](synthese_transversale.ipynb) : recoupements
-  reproductibles entre les quatre domaines, avec références et contre-exemples.
-- [Synthese_croisee_narratif.md](Synthese_croisee_narratif.md) : lecture rédigée
-  des résultats croisés et des hypothèses du narratif fictif.
-
-La synthèse transversale est une proposition à discuter collectivement : elle
-ne remplace pas la validation des analyses de chaque domaine et distingue les
-jointures calculées, les affirmations documentaires et les hypothèses.
 
 /!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
 Ils ne représentent pas des informations factuelles à propos de personnes réelles,
