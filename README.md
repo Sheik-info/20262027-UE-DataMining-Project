@@ -1,65 +1,75 @@
-# Année 2026-2027 - M2IA/M2DS - UE Data Mining - Projet
+# Projet Data Mining — M2IA / M2DS (2026–2027)
 
-Sur ce repository, vous pourrez trouver l’ensemble des éléments
-nécessaire au projet de groupe de l’UE Data Mining pour l’année 2026-2027.
+**Groupe 8 :** Flavien, Leticia, Sarah, Marie, Arthur et Cheikh.  
+**UE :** Data Mining  
+**Nature du document :** rapport d'analyse et guide de lecture des notebooks.
 
-Votre objectif est de mettre en évidence le narratif caché à l’intérieur
-de ces données à l’aide des notions et méthodes vues au fur et
-à mesure de l’UE Data Mining.
+> **Avertissement :** tous les jeux de données et le récit étudié sont fictifs, créés à des fins pédagogiques. Ils ne décrivent aucune personne, organisation ou situation réelle.
 
-/!\ Ce narratif est entièrement fictif. Il a été créé dans un objectif pédagogique et ne reflète aucunement la réalité /!\
+## Sommaire
 
-Pour ce faire, vous travaillerez en groupe en débattant et
-en vous répartissant les tâches à faire.
+1. [Contexte et objectifs](#1-contexte-et-objectifs)
+2. [Jeux de données](#2-jeux-de-données)
+3. [Organisation du rapport et notebooks](#3-organisation-du-rapport-et-notebooks)
+4. [Démarche méthodologique](#4-démarche-méthodologique)
+5. [Résultats et récit caché reconstitué](#5-résultats-et-récit-caché-reconstitué)
+6. [Contrôles, contradictions et limites](#6-contrôles-contradictions-et-limites)
+7. [Conclusion et portée des résultats](#7-conclusion-et-portée-des-résultats)
+8. [Reproduction des analyses](#8-reproduction-des-analyses)
+9. [Assistance IA](#9-assistance-ia)
 
-Le rendu attendu est un rapport, sous la forme d’un notebook jupyter,
-qui détaillera vos réflexions, les méthodes et vos conclusions.
+## 1. Contexte et objectifs
 
-Pour cela, le fichier `Base_notebook_to_complete.ipynb` est mis à votre disposition (vous pouvez changer le nom si vous le souhaitez).
+Ce projet de groupe de l'UE Data Mining vise à **mettre en évidence un narratif caché** à partir de données synthétiques réparties en quatre domaines : santé, écologie, logistique et archives publiques.
 
-Pensez à bien y préciser:
+Notre démarche consiste à explorer les données de chaque domaine, à relever les anomalies et régularités, puis à confronter les informations entre domaines. Le but est de proposer une reconstruction argumentée du récit, en explicitant les preuves, les calculs, les contradictions et les incertitudes.
 
-* Le nom de votre groupe
-* La liste des membres
+**Principe de lecture :** les correspondances mesurées dans les tables, les affirmations contenues dans les documents et les hypothèses interprétatives sont distinguées tout au long du rapport.
 
-Vous serez avant tout évalué sur votre méthode, donc soyez précis, détaillé
-et rigoureux dans vos descriptions.
+## 2. Jeux de données
 
-/!\ L’usage de l’IA Générative est fortement déconseillé (ce sont vos cerveaux que l’on souhaite entrainer ici).
-Si vous souhaitez tout de même l’utiliser, cela doit être justifié et documenté dans votre rapport /!\
+| Domaine | Dossier source | Nature des informations |
+| --- | --- | --- |
+| Santé (Health) | `data/health/` | Données médicales issues de cliniques et d'hôpitaux |
+| Écologie (Ecology) | `data/ecology/` | Recherches environnementales et observations de terrain |
+| Logistique (Logistics) | `data/logistics/` | Données d'entreprises, de stocks et de transport |
+| Archives publiques (Public Records) | `data/public_records/` | Registres et documents administratifs |
 
-## Jeux de données
+Le dictionnaire `data/data_dictionary.csv` décrit les variables présentes dans les différents jeux de données.
 
-Dans le dossier `data/`, vous trouverez les ensembles des jeux de données suivants:
+## 3. Organisation du rapport et notebooks
 
-- `data/public_records/` — jeux de données issus d’institutions administratives publiques,
-- `data/health/` — jeux de données médicales issus de cliniques et d’hôpitaux,
-- `data/ecology/` — jeux de données issus de recherches environnementales,
-- `data/logistics/` — jeux de données issus de groupes et d’entreprises privées.
+Le **présent README contient le rapport narratif détaillé** : résultats, éléments de preuve, rapprochements et limites. Les notebooks fournissent les analyses reproductibles, les préparations de données et les calculs sur lesquels repose ce rapport.
 
-Le fichier `data/data_dictionary.csv` détaille les caractéristiques des variables présentes dans chaque jeu de données.
+| Ordre | Notebook | Contenu |
+| --- | --- | --- |
+| 1 | [Health](health.ipynb) | Sept tables : profils cliniques, signaux, notes et interventions répétées ; contributions de Leticia et Flavien réunies |
+| 2 | [Ecology](ecology.ipynb) | Six fichiers : conditions de collecte, profils de sites, variations mensuelles et rapports de terrain |
+| 3 | [Logistics](logistics.ipynb) | Sept fichiers : stocks, commandes, réceptions et circuits de transport |
+| 4 | [Public Records](public_records.ipynb) | Neuf fichiers : registres, documents, références et parcours administratifs |
+| 5 | [Synthèse transversale](synthese_transversale.ipynb) | Recoupements recalculés entre les quatre domaines, textes sources, contradictions et conclusion |
 
-## Lecture du rapport
+Chaque notebook de domaine prépare et analyse ses tables. La synthèse transversale **recalcule les rapprochements depuis les CSV sources**, afin de rendre vérifiables les correspondances présentées ci-dessous. `Base_notebook_to_complete.ipynb` est le modèle initial et ne fait pas partie du rapport final. Les contributions antérieures restent consultables dans l'historique Git.
 
-Groupe 8 : Flavien, Leticia, Sarah, Marie, Arthur et Cheikh.
+## 4. Démarche méthodologique
 
-Les cinq notebooks constituent le rapport. Ordre de lecture :
+Notre analyse s'articule autour des étapes suivantes :
 
-| Notebook | Contenu |
-| --- | --- |
-| [Health](health.ipynb) | Sept tables, profils cliniques, signaux, notes et interventions répétées ; contributions de Leticia et Flavien réunies. |
-| [Ecology](ecology.ipynb) | Six fichiers, conditions de collecte, profils de sites, variations mensuelles et rapports de terrain. |
-| [Logistics](logistics.ipynb) | Sept fichiers, stocks, commandes, réceptions et circuits de transport. |
-| [Public Records](public_records.ipynb) | Neuf fichiers, registres, documents, références et parcours administratifs. |
-| [Synthèse transversale](synthese_transversale.ipynb) | Recoupements recalculés entre les quatre domaines, textes sources, contradictions et conclusion. |
+1. **Exploration par domaine :** examiner les fichiers et leurs variables, en s'appuyant sur le dictionnaire de données.
+2. **Préparation et vérifications :** contrôler la cohérence des identifiants, des dates et des informations utiles aux rapprochements.
+3. **Recherche de régularités et d'anomalies :** étudier les dossiers cliniques, les événements écologiques, les flux logistiques et les archives administratives dans leurs notebooks respectifs.
+4. **Recoupements transversaux :** rapprocher organisations, lieux, événements, identifiants et chronologies entre les quatre domaines ; les calculs correspondants sont regroupés dans la synthèse transversale.
+5. **Confrontation des hypothèses :** examiner les documents textuels, les contre-exemples et les incohérences avant de formuler une interprétation.
 
-Chaque domaine prépare ses tables ; la synthèse recalcule les rapprochements
-depuis les CSV sources. Le README présente le récit et renvoie aux analyses
-qui l'étayent. `Base_notebook_to_complete.ipynb` reste le modèle initial et
-ne constitue pas le rapport final. Les contributions antérieures restent
-accessibles dans l'historique Git.
+**Niveau de preuve utilisé dans ce rapport :**
 
-## Récit caché reconstitué
+- **Observation calculée :** résultat obtenu à partir des tables et vérifiable dans les notebooks.
+- **Affirmation documentaire :** information mentionnée dans une note, un rapport ou un mémo, qui ne constitue pas nécessairement une preuve indépendante.
+- **Hypothèse :** interprétation proposée pour relier les indices ; elle reste signalée comme telle lorsqu'aucune vérification directe n'est possible.
+
+Les sections suivantes exposent l'ensemble des résultats détaillés, en conservant les identifiants des dossiers et les références aux fichiers sources.
+
+## 5. Résultats et récit caché reconstitué
 
 Les sources convergent vers le scénario suivant : **une population dissimulée
 parmi les humains, désignée comme « Chamaeleonidian », est associée à des
@@ -79,7 +89,7 @@ toutes les intentions de l'auteur. La consigne demande un narratif : nous
 n'avons pas identifié de règle de décodage établissant une phrase chiffrée
 unique à restituer mot pour mot.
 
-### 1. Particularités physiologiques et identité publique
+### 5.1. Particularités physiologiques et identité publique
 
 Trois dossiers constituent les principales pistes cliniques :
 
@@ -109,7 +119,7 @@ Sources : [notes cliniques](data/health/clinical_notes.csv),
 [déclarations de responsables](data/public_records/officer_filings.csv)
 et [documents publics](data/public_records/public_and_investigative_documents.csv).
 
-### 2. Continuités historiques : des pistes, pas des égalités d'identité
+### 5.2. Continuités historiques : des pistes, pas des égalités d'identité
 
 Les registres font apparaître deux successions chronologiques de fonctions :
 
@@ -140,7 +150,7 @@ Sources : [déclarations](data/public_records/officer_filings.csv),
 [actes](data/health/clinical_procedures.csv) et documents `PUB-510043`,
 `PUB-510076`, `PUB-510033` et `PUB-510044`.
 
-### 3. Approvisionnement biologique et cloisonnement des informations
+### 5.3. Approvisionnement biologique et cloisonnement des informations
 
 Les identifiants d'organisations permettent de rapprocher les domaines :
 
@@ -183,7 +193,7 @@ Sources : [expéditions](data/logistics/shipments.csv),
 [rapports écologiques](data/ecology/environmental_field_reports.csv) et
 [mémos institutionnels](data/public_records/institutional_memos.csv).
 
-### 4. Une branche clinique sélective, distincte des dossiers physiologiques
+### 5.4. Une branche clinique sélective, distincte des dossiers physiologiques
 
 MRP-42 représente **50 actes chez 28 patients**. Vingt personnes ont un acte
 unique de recherche ; huit bénéficiaires reçoivent les 30 actes répétés :
@@ -225,7 +235,7 @@ Sources : [procédures](data/health/clinical_procedures.csv),
 [nominations publiques](data/public_records/public_appointments.csv),
 `PUB-510045` et [calculs de la synthèse transversale](synthese_transversale.ipynb).
 
-### 5. Stratégies environnementales opposées et hypothèse de transfert extérieur
+### 5.5. Stratégies environnementales opposées et hypothèse de transfert extérieur
 
 Les minutes de 1962 (`PUB-510033`) opposent Bell, favorable aux effets
 attendus du réchauffement et des corridors floraux, Marot, qui veut intégrer
@@ -245,7 +255,9 @@ et l'ampleur ne sont pas identifiés. Il ne permet pas de désigner une planète
 d'affirmer que les chauves-souris y sont expédiées ou de déterminer l'origine
 de la population.
 
-### 6. Vérifications qui empêchent de surinterpréter le récit
+## 6. Contrôles, contradictions et limites
+
+### 6.1. Vérifications qui empêchent de surinterpréter le récit
 
 - **Dates des mémos et dates des transports.** `MEM-510100` date de 2023
   et cite SHP-2022-00011, partie le 9 février 2022. `MEM-510101` date de
@@ -276,7 +288,9 @@ de la population.
   emploie non-terrestrial pour des observations satellitaires. Les usages
   ordinaires ne doivent pas être fusionnés avec les indices du programme.
 
-### Portée de la conclusion
+## 7. Conclusion et portée des résultats
+
+### 7.1. Portée de la conclusion
 
 Le noyau du récit est étayé par les textes et par une partie des relations
 structurées. Restent non établis : les égalités exactes entre identités
@@ -289,34 +303,26 @@ Le détail des préparations, contrôles et résultats négatifs reste dans les
 notebooks de domaine. La [synthèse transversale](synthese_transversale.ipynb)
 présente les rapprochements recalculés et les textes sources.
 
-**Assistance IA.** Une assistance a été utilisée pour le recoupement des
-données, la vérification du code et l'aide à la rédaction. Les sources,
-calculs, contradictions et limites sont exposés pour permettre la discussion
-et la vérification par le groupe.
+## 8. Reproduction des analyses
 
-/!\ Ces jeux de données sont entièrement synthétiques et ont été créé dans un but pédogagique.
-Ils ne représentent pas des informations factuelles à propos de personnes réelles,
-d’organisations réelles, de gouvernnements réels ou localisations réelles.
-Toute ressemblance avec des personnes réelles, physiques ou morales, est totalement involontaire et fortuite. /!\ 
- 
-## Pour bien commencer
+**Prérequis :** Python 3.14.7 (version indiquée comme testée), Jupyter Notebook et les dépendances de `requirements.txt`.
 
-1. Faites un `fork` de ce repository vers un noveau repository pour votre groupe.
-2. Clonez le repository de votre groupe sur votre machine.
-3. Créez un environnement : `python -m venv .venv` (version testée : Python 3.14.7).
-4. Activez-le puis installez les dépendances : `python -m pip install -r requirements.txt`.
-5. Dans VS Code, sélectionnez son interpréteur et son noyau Python ; ou lancez `python -m notebook nom-du-notebook.ipynb`.
-6. Travaillez en groupe et complétez le notebook
+Depuis la racine du dépôt (contenant `data/`) :
 
-Les dépendances sont déclarées au format pip, et non sous forme d'un export
-Conda spécifique à une machine. Sur Windows, l'interpréteur se trouve dans
-`.venv\Scripts\python.exe`. Le dossier courant doit être celui qui contient
-`data/`. Pour vérifier un notebook, redémarrez son noyau puis exécutez toutes
-les cellules dans l'ordre. Les données brutes ne doivent pas être écrasées.
+```bash
+python -m venv .venv
+python -m pip install -r requirements.txt
+python -m notebook
+```
 
-## Rendu
+Activez l'environnement virtuel avant d'installer les dépendances et de lancer Jupyter : sous Windows, `.venv\Scripts\activate` ; sous macOS/Linux, `source .venv/bin/activate`.
 
-Le rendu pourra se faire via:
+Ouvrez les notebooks dans l'ordre de lecture indiqué en section 3. Pour vérifier leur reproductibilité, redémarrez le noyau et exécutez toutes les cellules dans l'ordre. Ne modifiez pas les données brutes. Les dépendances sont déclarées au format pip, et non dans un export Conda propre à une machine. Dans VS Code, sélectionnez l'interpréteur de l'environnement virtuel et le noyau correspondant.
 
-* une `pull-request`, 
-* en m’envoyant une archive .zip contenant votre travail à `antoine.richard@chu-lyon.fr`.
+## 9. Assistance IA
+
+Une assistance IA a été utilisée pour le recoupement des données, la vérification du code et l'aide à la rédaction. Les sources, calculs, contradictions et limites sont exposés pour permettre leur discussion et leur vérification par le groupe.
+
+**À préciser par le groupe avant le rendu :** les tâches exactes réalisées avec assistance IA, les parties concernées et les vérifications humaines effectuées, conformément à la consigne de l'UE.
+
+---
