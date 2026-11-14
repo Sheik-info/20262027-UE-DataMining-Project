@@ -17,6 +17,7 @@
 7. [Conclusion et portée des résultats](#7-conclusion-et-portée-des-résultats)
 8. [Reproduction des analyses](#8-reproduction-des-analyses)
 9. [Assistance IA](#9-assistance-ia)
+10. [Rendu](#10-rendu)
 
 ## 1. Contexte et objectifs
 
@@ -265,6 +266,12 @@ de la population.
   sont déclarées `ambient` et `ordinary`, respectivement comme équipements
   de protection et service juridique. Leur lien documentaire avec CHAMELEO
   ne suffit pas à les présenter comme deux cargaisons biologiques réfrigérées.
+- **Stocks et références d'ajustement.** Les 500 lignes de stocks couvrent
+  20 mois distincts dans un intervalle de 89 mois. Les reports concordent sur
+  les 50 paires de mois consécutifs disponibles ; les mois absents restent
+  inconnus. Plusieurs ajustements citent une opération d'une autre date,
+  d'un autre site ou d'une autre unité. Une référence existante ne suffit donc
+  pas à établir la correction d'une quantité ou le devenir d'un lot.
 - **Volumes de transport.** Les comptes selon la date réelle de départ
   donnent 43 expéditions en 2021, 61 en 2022, 73 en 2023, 47 en 2024 et
   34 en 2025. Le maximum observé est 2023, pas 2021 ou 2024. Les transports
@@ -323,3 +330,18 @@ Ouvrez les notebooks dans l'ordre de lecture indiqué en section 3. Pour vérifi
 
 Une assistance IA a été utilisée pour le recoupement des données, la vérification du code et l'aide à la rédaction. Les sources, calculs, contradictions et limites sont exposés pour permettre leur discussion et leur vérification par le groupe.
 
+## 10. Rendu
+
+La [page officielle du cours](https://a-t-richard.github.io/teaching/data-mining/#projet)
+autorise un ou plusieurs notebooks, accompagnés du README et des dépendances.
+Le présent rapport est réparti entre les cinq notebooks indiqués plus haut.
+
+- Échéance annoncée : **dimanche 15 novembre 2026 à 23 h 59** ; chaque jour de retard est pénalisé.
+- Envoi par mail à `antoine.richard@chu-lyon.fr`, avec une archive ZIP ou le lien GitHub du groupe.
+- Objet demandé : le nom de l'UE et les noms et prénoms des membres du groupe.
+- Avant envoi, exécuter les notebooks dans l'ordre depuis un espace Python neuf ; le correcteur ne doit pas avoir à adapter le code.
+
+Le [README du dépôt initial](https://github.com/a-t-richard/20262027-UE-DataMining-Project)
+précise que la méthode et sa justification sont centrales, et que l'assistance
+par IA doit être justifiée et documentée. Les déclarations correspondantes sont
+conservées dans les rapports. Publier sur GitHub ne remplace pas l'envoi du mail.
