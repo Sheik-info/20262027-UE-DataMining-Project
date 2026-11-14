@@ -1,6 +1,6 @@
 # Projet Data Mining — M2IA / M2DS (2026–2027)
 
-**Groupe 8 :** Flavien, Leticia, Sarah, Marie, Arthur et Cheikh.  
+**Groupe 8 :** Flavien, Leticia, Sarah, Maria, Arthur et Cheikh.  
 **UE :** Data Mining  
 **Nature du document :** rapport d'analyse et guide de lecture des notebooks.
 
