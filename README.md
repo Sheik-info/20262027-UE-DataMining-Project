@@ -323,6 +323,3 @@ Ouvrez les notebooks dans l'ordre de lecture indiqué en section 3. Pour vérifi
 
 Une assistance IA a été utilisée pour le recoupement des données, la vérification du code et l'aide à la rédaction. Les sources, calculs, contradictions et limites sont exposés pour permettre leur discussion et leur vérification par le groupe.
 
-**À préciser par le groupe avant le rendu :** les tâches exactes réalisées avec assistance IA, les parties concernées et les vérifications humaines effectuées, conformément à la consigne de l'UE.
-
----
