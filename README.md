@@ -194,6 +194,14 @@ Sources : [expéditions](data/logistics/shipments.csv),
 [rapports écologiques](data/ecology/environmental_field_reports.csv) et
 [mémos institutionnels](data/public_records/institutional_memos.csv).
 
+La contre-enquête étend le constat de KNT-KES : les **18 envois environnementaux**
+suivent chacun une fin d'accès Horizon distincte de **six heures**. Aucun des
+432 autres envois ne présente ce délai avec la dernière fin Horizon antérieure.
+Parmi les accès disposant de six mois de suivi, **13 fenêtres Horizon sur 13**
+montrent une baisse des indices visuels et acoustiques, contre 7 des 26 autres.
+Les calendriers décalés et la disponibilité des appareils sont contrôlés dans
+la synthèse. Cette association ne suit pas des lots et ne prouve pas que les accès ont causé les baisses ou servi à prélever des animaux.
+
 ### 5.4. Une branche clinique sélective, distincte des dossiers physiologiques
 
 MRP-42 représente **50 actes chez 28 patients**. Vingt personnes ont un acte
@@ -230,6 +238,12 @@ sans démontrer son mécanisme, son efficacité rajeunissante ou un échange
 de bénéfices contre un soutien politique. Les trois actes d'Elira Vaun
 précèdent le décès public de 2021 : ils ne prouvent pas une intervention
 post mortem.
+
+Un contrôle supplémentaire limite l'interprétation biologique : **12 autres
+patients avec visites exécutives, sans MRP-42 répété, présentent aussi un écart
+BIOAGE moyen de 9,29 ans**. Dix n'ont aucun acte MRP-42 enregistré, deux en ont
+un. Les écarts d'âge et de recrutement persistent. La divergence biologique
+n'est donc pas une signature exclusive des huit bénéficiaires répétés.
 
 Sources : [procédures](data/health/clinical_procedures.csv),
 [observations](data/health/clinical_observations.csv),
