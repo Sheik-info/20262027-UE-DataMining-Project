@@ -434,18 +434,3 @@ Ouvrez les notebooks dans l'ordre de lecture indiqué en section 3. Pour vérifi
 
 Une assistance IA a été utilisée pour le recoupement des données, la vérification du code et l'aide à la rédaction. Les sources, calculs, contradictions et limites sont exposés pour permettre leur discussion et leur vérification par le groupe.
 
-## 10. Rendu
-
-La [page officielle du cours](https://a-t-richard.github.io/teaching/data-mining/#projet)
-autorise un ou plusieurs notebooks, accompagnés du README et des dépendances.
-Le présent rapport est réparti entre les cinq notebooks indiqués plus haut.
-
-- Échéance annoncée : **dimanche 15 novembre 2026 à 23 h 59** ; chaque jour de retard est pénalisé.
-- Envoi par mail à `antoine.richard@chu-lyon.fr`, avec une archive ZIP ou le lien GitHub du groupe.
-- Objet demandé : le nom de l'UE et les noms et prénoms des membres du groupe.
-- Avant envoi, exécuter les notebooks dans l'ordre depuis un espace Python neuf ; le correcteur ne doit pas avoir à adapter le code.
-
-Le [README du dépôt initial](https://github.com/a-t-richard/20262027-UE-DataMining-Project)
-précise que la méthode et sa justification sont centrales, et que l'assistance
-par IA doit être justifiée et documentée. Les déclarations correspondantes sont
-conservées dans les rapports. Publier sur GitHub ne remplace pas l'envoi du mail.
