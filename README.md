@@ -50,6 +50,13 @@ Le **présent README contient le rapport narratif détaillé** : résultats, él
 | 4 | [Public Records](public_records.ipynb) | Neuf fichiers : registres, documents, références et parcours administratifs |
 | 5 | [Synthèse transversale](synthese_transversale.ipynb) | Recoupements recalculés entre les quatre domaines, textes sources, contradictions et conclusion |
 
+Le [parcours de lecture de la synthèse](synthese_transversale.ipynb#parcours-de-lecture)
+relie les résultats des quatre domaines aux contrôles entre fichiers : profils
+cliniques, répétitions MRP-42, baisses écologiques, flux et pièces documentaires.
+Chaque ligne indique l'analyse d'origine et le calcul qui confirme, nuance ou
+écarte le rapprochement. Le suivi BIOAGE est placé avec les trajectoires Health,
+et les chemins datés avec les graphes Logistics, avant leurs conclusions.
+
 Chaque notebook de domaine prépare et analyse ses tables. La synthèse transversale **recalcule les rapprochements depuis les CSV sources**, afin de rendre vérifiables les correspondances présentées ci-dessous. `Base_notebook_to_complete.ipynb` est le modèle initial et ne fait pas partie du rapport final. Les contributions antérieures restent consultables dans l'historique Git.
 
 ## 4. Démarche méthodologique
@@ -202,6 +209,35 @@ montrent une baisse des indices visuels et acoustiques, contre 7 des 26 autres.
 Les calendriers décalés et la disponibilité des appareils sont contrôlés dans
 la synthèse. Cette association ne suit pas des lots et ne prouve pas que les accès ont causé les baisses ou servi à prélever des animaux.
 
+La lecture des écritures retrouve **18 ajustements négatifs liés aux 18 envois
+écologiques**, concordants sur site, catégorie, unité et date par rapport au départ.
+Le contrôle d'arrivée conserve néanmoins une discordance. Sur les mois disponibles,
+les déficits sont plus fréquents aux dates des envois, mais les ajustements peuvent
+déjà les expliquer : pour mars 2024 à KNT-KES, le scénario donne 3,03 − 3,02 = 0,01 lot.
+Les baisses d'activité ne commencent pas toutes après l'accès déclaré : huit relevés
+du mois d'accès sont déjà terminés avant l'entrée, dont cinq présentent déjà un recul
+des deux indices par rapport au mois précédent.
+
+Les achats présentent aussi un calendrier régulier : les 18 commandes de terrain
+sont datées à J−18 des accès Horizon, et les 26 commandes cliniques à J−16 des
+départs correspondants. Les réceptions existent pour les 44 commandes, mais les
+dates et contenus ne permettent pas de les assimiler aux mêmes lots expédiés.
+Le détail et les comparaisons de quantités figurent dans la synthèse.
+
+Le contrôle des chemins datés dans Logistics retrouve six arrivées écologiques
+pouvant atteindre le siège en conservant catégorie biologique et unité de lot
+scellé. Tous ces chemins passent par SHP-2023-00022. Un envoi clinique biologique
+ultérieur, SHP-2024-00005, est disponible. Ces chemins supposent parfois plusieurs
+années d'attente et ne conservent pas les quantités ni les détenteurs : ils
+précisent des itinéraires candidats, sans suivre un lot ou un produit transformé.
+
+Les commandes de catégorie `grant` fournissent d'autres liens déclarés :
+PO-2020-00034 relie le siège Meridian à Horizon, et PO-2024-00022 le siège
+au conseil industriel. Les réceptions sont retrouvées par clé de commande.
+La synthèse examine les onze commandes de cette catégorie, y compris celle
+annulée. Ces écritures ne constituent pas une preuve de versement bancaire
+ou de paiement à un bénéficiaire clinique.
+
 ### 5.4. Une branche clinique sélective, distincte des dossiers physiologiques
 
 MRP-42 représente **50 actes chez 28 patients**. Vingt personnes ont un acte
@@ -224,6 +260,16 @@ LIC-VLN-MED-1002, la licence de Dr Naima Orrel, dans les deux établissements
 Asterion FAC-VLN-101 et FAC-AVL-201. **Les trois patients physiologiquement
 atypiques cités plus haut ne figurent pas parmi ces huit bénéficiaires.**
 
+Six bénéficiaires ont aussi d'anciennes fonctions dans les autorités d'accès,
+Northstar ou le conseil industriel. Les six périodes renseignées se terminent
+avant leur premier acte MRP-42 : elles ne permettent pas de leur attribuer
+les décisions récentes de ces organismes. Le contrôle daté figure dans la synthèse.
+
+Les quatre sociétés dirigées par les bénéficiaires corporatifs figurent dans
+l'ERP, mais ne sont déclarées ni expéditeur, ni destinataire, ni transporteur
+des 44 envois ciblés. Leur présence dans 86 autres envois ne prouve pas une
+participation aux opérations identifiées ou un paiement pour les interventions.
+
 Les 26 livraisons cliniques précèdent 26 actes distincts dans le même
 établissement, de **4,2 à 7,8 jours**. La comparaison par établissement et
 année conserve 25 livraisons cliniques comparables à des témoins ; la
@@ -231,9 +277,15 @@ dernière reste sans témoin. Cette correspondance n'identifie pas le contenu
 administré : aucune clé disponible ne relie directement un lot réceptionné
 au matériel MRP-42 utilisé chez un patient.
 
+Les libellés d'achat précisent la branche clinique : trois des 26 commandes
+`Clinical Programmes` concernent des lots de spécimens de faune et une des
+échantillons environnementaux, tous auprès de Meridian. Les quatre réceptions
+sont retrouvées ; trois précèdent l'acte rapproché, celle de 2015 est postérieure.
+Les libellés ne donnent ni espèce, ni composition de traitement, et les liens
+commande–expédition–acte restent exploratoires. Le détail figure dans la synthèse.
+
 L'écart moyen entre âge chronologique et BIOAGE estimé est de **11,32 ans**
-chez les huit bénéficiaires répétés, contre environ un an dans les autres
-groupes. Cela soutient l'existence d'un programme particulier dans le récit,
+chez les huit bénéficiaires répétés. Cela soutient l'existence d'un programme particulier dans le récit,
 sans démontrer son mécanisme, son efficacité rajeunissante ou un échange
 de bénéfices contre un soutien politique. Les trois actes d'Elira Vaun
 précèdent le décès public de 2021 : ils ne prouvent pas une intervention
@@ -244,6 +296,20 @@ patients avec visites exécutives, sans MRP-42 répété, présentent aussi un �
 BIOAGE moyen de 9,29 ans**. Dix n'ont aucun acte MRP-42 enregistré, deux en ont
 un. Les écarts d'âge et de recrutement persistent. La divergence biologique
 n'est donc pas une signature exclusive des huit bénéficiaires répétés.
+
+L'analyse individuelle dans Health retrouve 30 mesures BIOAGE distinctes,
+toutes au jour de contrôle prévu après les 30 actes répétés, à 28–43 jours.
+Les 27 paires disponibles avec une mesure antérieure comportent 20 baisses et
+sept hausses (variation médiane −1,70 an). Le point antérieur est souvent ancien
+et l'appareil change dans chaque paire : ce suivi organisé ne mesure pas à lui
+seul l'efficacité des interventions.
+
+Les **30 actes répétés** ont aussi **30 sorties de stock clinique** au même jour
+et établissement. Les registres ne fournissent pas pour autant une affectation
+du matériel à chaque patient. Dix livraisons cliniques précèdent le premier envoi
+écologique observé ; les départs cliniques viennent du siège Meridian, sans transfert
+de lot démontré depuis les installations biologiques régionales. Ces ruptures
+empêchent de présenter les deux branches comme une chaîne matérielle entièrement tracée.
 
 Sources : [procédures](data/health/clinical_procedures.csv),
 [observations](data/health/clinical_observations.csv),
@@ -259,6 +325,12 @@ stratégie dépendant de l'extraction et d'une hausse permanente de chaleur.
 `PUB-510094` retrouve une tension entre continuité de programmes contrôlés
 et transparence, protection des habitats et contrôle indépendant.
 
+Une relation ERP complète ces pistes institutionnelles : PO-2023-00016,
+datée du 1er avril 2023, est une commande `grant` de Vale Strategy auprès de
+Varlan Natural History Circle, avec réception RCV-2023-00405. Elle documente
+un lien entre les organisations, sans établir une identité commune entre
+Jacob Vale et J. Varlan ou l'affectation de fonds à une opération précise.
+
 Le récit suggère donc des stratégies concurrentes autour d'intérêts de long
 terme. Il ne démontre ni que ce réseau aurait provoqué le réchauffement
 mondial, ni que tous les militants écologistes ou Jacob Vale appartiendraient
@@ -270,9 +342,24 @@ et l'ampleur ne sont pas identifiés. Il ne permet pas de désigner une planète
 d'affirmer que les chauves-souris y sont expédiées ou de déterminer l'origine
 de la population.
 
+Une lecture externe des noms est proposée séparément dans la synthèse :
+[SANBI](https://www.sanbi.org/animal-of-the-week/kwazulu-dwarf-chameleon/)
+atteste `unwabu` comme nom isiZulu du caméléon, et un
+[récit recueilli par Callaway](https://sacred-texts.com/book/the-religious-system-of-the-amazulu/unkulunkulu)
+associe cet animal à un message de vie sans mort. Cela peut éclairer les thèmes
+choisis par l'auteur ; cette allusion possible n'est pas une preuve biologique.
+
 ## 6. Contrôles, contradictions et limites
 
 ### 6.1. Vérifications qui empêchent de surinterpréter le récit
+
+Le contrôle ciblé de la composition et de la destination est reproduit dans
+la synthèse : MRP-42 porte un libellé de résilience métabolique sans composition détaillée
+ni clé matérielle retrouvée dans les autres tables ; les 450 expéditions
+déclarées renvoient aux sites ERP connus. PUB-510063 évoque d'autres dossiers
+sans fournir de référence d'expédition ni de destination nommée. Ces limites
+précisent ce que les sources permettent de reconstituer, sans ajouter de détail biologique ou géographique.
+
 
 - **Dates des mémos et dates des transports.** `MEM-510100` date de 2023
   et cite SHP-2022-00011, partie le 9 février 2022. `MEM-510101` date de
@@ -302,7 +389,10 @@ de la population.
 - **Indépendance des sources.** Mara Venn signe `PUB-510079` et `PUB-510063` ;
   Soren Kade signe les trois mémos centraux ; Jora Menne signe les pistes
   `PUB-510044` et `PUB-510076`. Ces textes ne sont pas autant de témoignages
-  indépendants.
+  indépendants. Lysa Quen, auteure de la revue des interventions,
+  a aussi participé à des prises en charge antérieures ; le rapport écologique
+  central est signé pour Horizon. Ces provenances sont documentées sans en
+  déduire automatiquement un biais ou une intention.
 - **Contre-exemples.** `MEM-510089` emploie CHAMELEO pour un ancien logiciel ;
   `PUB-510070` présente Chamaeleonidian comme une métaphore ; `PUB-510127`
   cite Unwabu dans un contexte maritime ou folklorique ; `PUB-510121`
